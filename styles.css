@@ -1,0 +1,86 @@
+/* styles.css */
+
+* {
+  font-family:Calibri (Body),sans-serif;
+  font-size  :8pt;
+}
+
+body {
+  
+  margin-left:5px;
+  background:#fdfae1;
+  border    :0px solid #ff0080;
+}
+
+img{
+
+border-radius:5px;
+}
+
+
+li a, .button  {
+  text-decoration:none;
+   
+}
+
+li a:hover, .button:hover {
+  color:red;
+  cursor:pointer;
+}
+
+ 
+
+
+.menu li, .button {
+  display           :inline;
+  padding           :5px 5px;
+  border            :0px solid #020200;
+  font-family		:calibr;
+  text-decoration	:none;
+  background        :transparent;
+	color           :#040404;
+	border-radius     :10px;
+	
+	box-shadow        :1px 1px 1px 1px #000000;
+}
+
+.smenu li, .button {
+  display           :inline;
+  padding           :2px 2px;
+  border            :1px solid #020200;
+  font-family		:calibr;
+  font-size: 10px;
+  text-decoration	:none;
+  background        :solid #99cc00 ;
+	color           :#0cd019;
+	border-radius     :1px;
+	cursor: pointer;
+	box-shadow        :1px 1px 1px 1px #000000;
+}
+
+
+.sbmenu li,.sbbuton{
+  display           :block;
+  padding           :2px 2px;
+  border            :1px solid #020200;
+  font-family		:calibr;
+  text-decoration	:none;
+  background        :solid #99cc00 ;
+	color           :#040404;
+	border-radius     :5px;
+	
+	box-shadow        :1px 0px 0px 0px #000000;
+}
+
+a{
+color:Blue;
+text-decoration :none;
+font-family:Agency fb,sans-serif;
+}
+
+iframe{
+frameborder:none;
+resize:horizontal; overflow:horizontal;'
+}
+
+

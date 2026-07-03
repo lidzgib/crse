@@ -1,0 +1,41 @@
+
+body {
+font-family: Arial, sans-serif;
+}
+.menu ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+.menu > ul > li {
+display: inline-block;
+position: relative;
+}
+.menu ul li a {
+display: block;
+padding: 10px 15px;
+text-decoration: none;
+color: #333;
+background-color: #f4f4f4;
+}
+.menu ul li ul {
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+padding: 0;
+margin: 0;
+background-color: #f4f4f4;
+box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+.menu ul li:hover > ul {
+display: block;
+}
+.menu ul li ul li {
+width: 200px;
+}
+.menu ul li ul li ul {
+left: 100%;
+top: 0;
+}
+

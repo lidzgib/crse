@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel ="stylesheet" href="styles.css">
+</head> 
+<body>
+
+<div style="display: inline;">
+  <table border="0" cellpadding="0">
+    <tr> 
+      <td id ="xm00" colspan="3"></td>
+      </tr>
+      <tr>
+      <td id ="xm01"><button type="button" onclick="menua1()" style="cursor: pointer; border-radius:5px;">DASHBOARD</button></td>
+      <td id ="xm02"><button type="button" onclick="menua2()" style="cursor: pointer; border-radius:5px;">Courses</button></td>
+      <td id ="xm03"><button type="button" onclick="" style="cursor: pointer; border-radius:5px;">Students</button></td>
+      <td id ="xm04"><button type="button" onclick="" style="cursor: pointer; border-radius:5px;">Asessments</button></td>
+      <td id ="xm05"><button type="button" onclick="" style="cursor: pointer; border-radius:5px;">Classroom</button></td>
+      <td id ="xm06"><button type="button" onclick="" style="cursor: pointer; border-radius:5px;">Reports</button></td>
+      <td id ="xmexit"><button type="button" onclick="menuxit()" style="cursor: pointer; border-radius:5px;">Exit</button></td>
+    </tr>
+    </table>
+</div>
+<script>
+
+function clearIframeContent() {
+  const iframe = document.getElementById('wfr');
+  if (iframe) {
+    // Set the source to 'about:blank' to load a completely empty page
+    iframe.src = 'about:blank'; 
+    alert('The iframe content has been cleared.');
+  }
+}
+
+function menuxit(){
+//blank();
+window.open("indexcnt.php","cntfr");
+//window.open("menumx.html","mfr");
+}
+
+function smenuxit(){
+//blank();
+window.open("space.html","wfr");
+window.open("menumx.html","mfr");
+}
+
+
+function m1s1(url2open,wichwindow){
+  window.open(url2open,wichwindow);
+}
+
+function clrmenu(){
+document.getElementById("xm01").innerHTML="";
+document.getElementById("xm02").innerHTML="";
+document.getElementById("xm03").innerHTML="";
+document.getElementById("xm04").innerHTML="";
+document.getElementById("xm05").innerHTML="";
+document.getElementById("xm06").innerHTML="";
+
+document.getElementById("xmexit").innerHTML="";
+
+}
+
+
+function menua1() {
+    clrmenu();
+
+  urlm1s1="1DBoard/Overview.html"; winx ="wfr";
+  document.getElementById("xm01").innerHTML="<button type='button' onclick='m1s1(urlm1s1,winx)' style='cursor: pointer; border-radius:3px; color:red; background-color:rgba(120,564,877,0.7)' >Overview</button>";
+  urlm1s2="1DBoard/maintainAlert.html";
+  document.getElementById("xm02").innerHTML="<button type='button' onclick='m1s1(urlm1s2,winx)' style='cursor: pointer; border-radius:3px; color:red; background-color:rgba(120,564,877,0.7)' >Maintenance Alert</button>";
+  urlm1s3="1DBoard/recenta.html";
+  document.getElementById("xm03").innerHTML="<button type='button' onclick='m1s1(urlm1s3,winx)' style='cursor: pointer; border-radius:3px; color:red; background-color:rgba(120,564,877,0.7)'>Recent Activity</button>";
+  urlm1s4="DBoard/myassets.html";
+  document.getElementById("xm04").innerHTML="<button type='button' onclick='m1s1(urlm1s4,winx)' style='cursor: pointer; border-radius:3px; color:red; background-color:rgba(120,564,877,0.7)' >My Assets</button>";
+  
+  document.getElementById("xmexit").innerHTML="<button type='button' onclick='smenuxit()' style='cursor: pointer; border-radius:3px; color:red; background-color:rgba(120,564,877,0.7)' >Exit</button>";
+  
+ // window.open("home.html","wrkf");
+}   
+
+function menua2() {
+  clrmenu();
+  winx ="wfr";
+  urlm2s1="space.html";
+  document.getElementById("xm01").innerHTML="<button type='button' onclick='m1s1(urlm2s1,winx)' style='cursor: pointer; border-color:gray; border-radius:2px; color:blue; background-color:rgba(200,800,700,0.3)' >All Assets</button>";
+   urlm2s2="2inventory/addasset.php";
+  document.getElementById("xm02").innerHTML="<button type='button' onclick='m1s1(urlm2s2,winx)' style='cursor: pointer; border-color:gray; border-radius:3px; color:blue; background-color:rgba(200,800,700,0.3)' >Add new asset</button>";
+  urlm2s3="";
+  document.getElementById("xm03").innerHTML="<button type='button' onclick='m1s1(urlm2s3,winx)' style='cursor: pointer; border-color:gray; border-radius:3px; color:blue; background-color:rgba(200,800,700,0.3)'>Asset Types</button>";
+  urlm2s4="";
+  document.getElementById("xm04").innerHTML="<button type='button' onclick='m1s1(urlm2s4,winx)' style='cursor: pointer; border-color:gray; border-radius:3px; color:blue; background-color:rgba(200,800,700,0.3)' >Archive/Disposed</button>";
+//document.getElementById("xmexit").innerHTML="<span style='color:blue;'><a href='menumx.html' class='button'>exit</span>";
+document.getElementById("xmexit").innerHTML="<button type='button' onclick='smenuxit()' style='cursor: pointer;border-color:gray; border-radius:3px; color:blue; background-color:rgba(200,800,700,0.3)' >Exit</button>";
+  
+}  
+function menua3() {
+    blank();
+    //window.open("login.php","wrkf");
+    document.getElementById("smx").style="margin-left:0px;margin-top:2px;";
+    document.getElementById("m00").innerHTML="<span style='color:blue;'>LOGIN</span>";
+    document.getElementById("m11").innerHTML ="<a href='login.php' target ='wrkf'><button type='button' style='cursor:pointer; border-radius:5px;background-color:transparent;'>Login</button></a>";
+    //document.getElementById("m12").innerHTML ="<a href='menumx.html' target ='wrkf'><button type='button' style='cursor:pointer; border-radius:5px;background-color:transparent;'>Cancel</button></a>";
+
+    //document.getElementById("m13").innerHTML ="<a href='test.html' target ='leftf'><button type='button' style='cursor:pointer; border-radius:5px;border-radius:5px;background-color:transparent;'>Modify</button></a>";
+  
+    // document.getElementById("m11").innerHTML = "<a href='test.html'  class ='button' title='' target='leftf'>Hire</a> ";
+  //  document.getElementById("m12").innerHTML = "<a href='test.html'  class ='button' title= 'Modify' target='leftf'> Modify </a> ";
+  //  document.getElementById("m13").innerHTML = "<a href='test.html'  class ='button' title= 'Remove' target='leftf'>Resign</a>";
+}  
+function menua4() {
+    blank();
+    document.getElementById("smx").style="margin-left:0px;margin-top:2px;";
+    document.getElementById("m00").innerHTML="<span style='color:red;'>ASSESMENT</span>";
+    document.getElementById("m11").innerHTML ="<a href='test.html' target ='wrkf'><button type='button' style='cursor:pointer; border-radius:5px; border-radius:5px;background-color:transparent;'>Hire</button></a>";
+    document.getElementById("m12").innerHTML ="<a href='test.html' target ='wrkf'><button type='button' style='cursor:pointer; border-radius:5px;border-radius:5px;background-color:transparent;'>Resign</button></a>";
+    document.getElementById("m13").innerHTML ="<a href='test.html' target ='wrkf'><button type='button' style='cursor:pointer; border-radius:5px;border-radius:5px;background-color:transparent;'>Modify</button></a>";
+
+    // document.getElementById("m11").innerHTML = "<a href='test.html'  class ='button' title='' target='leftf'>Hire</a> ";
+  //  document.getElementById("m12").innerHTML = "<a href='test.html'  class ='button' title= 'Modify' target='leftf'> Modify </a> ";
+  //  document.getElementById("m13").innerHTML = "<a href='test.html'  class ='button' title= 'Remove' target='leftf'>Resign</a>";
+} 
+
+/*function menuxit() {
+    blank();
+  //  window.open("menumx.html","menuf");
+     document.getElementById("m11").innerHTML = "<a href='test.html'  class ='button' title='' target='wrkf'>Hire</a> ";
+  //  document.getElementById("m12").innerHTML = "<a href='test.html'  class ='button' title= 'Modify' target='leftf'> Modify </a> ";
+  //  document.getElementById("m13").innerHTML = "<a href='test.html'  class ='button' title= 'Remove' target='leftf'>Resign</a>";
+}*/
+</script>
+</body>
+</html>  
